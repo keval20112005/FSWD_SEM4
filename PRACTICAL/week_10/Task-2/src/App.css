@@ -1,0 +1,22 @@
+.weather-app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  input {
+    padding: 8px;
+    margin-right: 5px;
+  }
+  
+  button {
+    padding: 8px;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+  }
+  
+  .error {
+    color: red;
+  }
+  
