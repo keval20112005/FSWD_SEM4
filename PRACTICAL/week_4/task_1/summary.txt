@@ -1,0 +1,10 @@
+cpp folder created
+second.cpp moved to cpp folder
+java folder created
+second.java moved to java folder
+py folder created
+second.py moved to py folder
+testcpp.cpp moved to cpp folder
+testJava.java moved to java folder
+testpython.py moved to py folder
+third.java moved to java folder
