@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Collection Manager</title>
+    <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Collection Manager</h1>
+        
+        <div class="movie-form">
+            <h2>Add a Movie</h2>
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Enter movie title">
+            <label for="genre">Genre:</label>
+            <input type="text" id="genre" placeholder="Enter genre">
+            <label for="rating">Rating (1-10):</label>
+            <input type="number" id="rating" placeholder="Enter rating" min="1" max="10">
+            <label for="year">Release Year:</label>
+            <input type="number" id="year" placeholder="Enter release year">
+            <button onclick="addMovie()">Add Movie</button>
+        </div>
+
+        <div class="movie-actions">
+            <button onclick="listMovies()">List All Movies</button>
+            <button onclick="listMoviesByGenre()">List Movies by Genre</button>
+            <button onclick="findHighestRated()">Find Highest Rated Movie</button>
+            <button onclick="listMoviesAfterYear()">List Movies After Year</button>
+        </div>
+
+        <div id="output">
+            <h2>Output:</h2>
+            <ul id="movie-list"></ul>
+        </div>
+    </div>
+
+    <script src="movie.js"></script>
+</body>
+</html>
