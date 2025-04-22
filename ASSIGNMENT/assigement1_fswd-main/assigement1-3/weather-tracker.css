@@ -1,0 +1,95 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #56ccf2, #2f80ed);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #f0f8ff;
+    margin-bottom: 20px;
+}
+
+.weather-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+input, select, button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    flex: 1 1 calc(33.33% - 20px);
+    box-sizing: border-box;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+input, select {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+input::placeholder, select {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+button {
+    background: #ff7e67;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 1 1 100%;
+    border: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #ff6f5e;
+    transform: translateY(-2px);
+}
+
+.weather-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.weather-list li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f0f8ff;
+}
+
+.weather-list li span {
+    font-weight: bold;
+}
+
+#hottest-city {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffeb3b;
+    margin-top: 20px;
+    font-weight: bold;
+}
